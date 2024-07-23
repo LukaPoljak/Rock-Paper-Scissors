@@ -1,0 +1,124 @@
+:root{
+    --main-color: #FFC9C9;
+    --font-size-main: 32px;
+    --font-size-buttons: 18px;
+    --font-color:white;
+}
+
+.font-buttons, footer{
+    font-size: var(--font-size-buttons);
+}
+
+.font-condition{
+    font-size: var(--font-size-main);
+
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+.font-buttons, .font-condition, footer{
+    color: var(--font-color);
+    -webkit-text-stroke: 0.06rem black;
+}
+
+body{
+    height: 100vh;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-content:space-around;
+    background: linear-gradient(#AFF1FF, #5FE2FF)
+}
+
+header{
+    padding:20px 0px 0px 100px;
+}
+
+header img{
+    width:15%;
+}
+
+
+main{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+
+
+button, footer{
+    background-color: var(--main-color);
+}
+
+
+.game{
+    flex:0.8;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+    overflow:hidden;
+}
+
+.game img{
+    max-width:25%;
+}
+
+.choices, .gameMode {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    gap:30px;
+}
+
+footer{
+    text-align: center;
+    padding:0.5em;
+    border-top:solid black;
+}
+
+button { 
+    border-style:solid;
+    border-color:black;
+    border-width:0.1em;
+    flex:1 1 80px;
+    max-width:150px;
+    padding:0.5em;
+    border-radius:8px;
+    transition: transform 300ms;
+}
+
+button img{
+    width:40px;
+}
+
+.button-shadow{
+    background-color: black;
+    box-shadow: -4px -4px black;
+    border-radius:8px;
+}
+
+button:hover {
+    transform: translate(7%, 7%);
+}
+
+button:active{
+    transform: translate(0%, 0%);
+}
+
+.choices button{
+    max-width:60px;
+}
+
+#result{
+    width: 150px;
+}
+
+

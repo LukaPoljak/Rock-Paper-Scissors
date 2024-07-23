@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
+    </head>
+    <body>
+
+        <header>
+            <img src="Hands/FinishedLogo.svg">
+        </header>
+
+        <main>
+            <section class="game">
+                <img id="humanHand" src="Hands/Rock-Human.svg">
+                <div class="scoring roboto-bold">
+                    <p class="font-buttons" id="mode">ENDLESS</p>
+                    <p class="font-condition" id="result">CHOOSE</p>
+                    <p class="font-condition" id="score">0 : 0</p>
+                </div>
+                <img id="robotHand" src="Hands/Rock-Robot.svg">
+            </section>
+            <section class="choices">
+                <div class="button-shadow"><button class="font-buttons" id="rock">
+                    <img src="Hands/Rock-Human.svg">
+                </button>
+            </div>
+                <div class="button-shadow"><button class="font-buttons" id="paper">
+                    <img src="Hands/Paper-Human.svg">
+                </button></div>
+                <div class="button-shadow"><button class="font-buttons" id="scissors">
+                    <img src="Hands/Scissors-Human.svg">
+                </button></div>
+                <div class="button-shadow"><button class="font-buttons roboto-bold" id="end">
+                    END
+                </button></div>
+            </section>
+
+            <section class="gameMode">
+                <div class="button-shadow"><button class="font-buttons roboto-bold" id="firstTo3">
+                    FIRST TO 3
+                </button></div>
+                <div class="button-shadow"><button class="font-buttons roboto-bold" id="3played">
+                    3 PLAYED
+                </button></div>
+                <div class="button-shadow"><button class="font-buttons roboto-bold" id="endless">
+                    ENDLESS
+                </button></div>
+            </section>
+        </main>
+
+        <footer class="roboto-bold">
+            Made by Luka Poljak
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
